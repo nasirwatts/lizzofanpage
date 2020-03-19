@@ -809,6 +809,13 @@ ul.pagination li a {
 	text-align: center;
 	padding: 15px;
 }
+.box-facebook {
+	width: 95px;
+	height: 100px;
+	color: #fff;
+	text-align: center;
+	padding: 15px;
+}
 .box-facebook:hover,
 .box-twitter:hover,
 .box-youtube:hover,

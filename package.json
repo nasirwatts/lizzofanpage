@@ -1,0 +1,11 @@
+{
+  "name": "lizzo",
+  "version": "1.0.0",
+  "description": "Lizzo Fan Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nasir Watts",
+  "license": "MIT"
+}

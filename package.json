@@ -3,9 +3,14 @@
   "version": "1.0.0",
   "description": "Lizzo Fan Page",
   "main": "index.js",
+  "homepage": "https:/nasirwatts.github.io/lizzofanpage",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Nasir Watts",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "gh-pages": "^2.2.0"
+  }
 }

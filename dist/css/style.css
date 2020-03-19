@@ -811,10 +811,10 @@ ul.pagination li a {
 }
 .box-facebook {
 	width: 95px;
-	height: 100px;
+	height: 95px;
 	color: #fff;
 	text-align: center;
-	padding: 15px;
+	padding-top: 20px;
 }
 .box-facebook:hover,
 .box-twitter:hover,

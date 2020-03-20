@@ -87,3 +87,14 @@ result.addEventListener('click', (e) => {
 function clearcontent(elementID) {
 	document.getElementById(elementID).innerHTML = '';
 }
+const countEl = document.getElementById('count');
+
+updateVisitCount();
+
+function updateVisitCount() {
+	fetch('https://api.countapi.xyz/update/florin-popcom/codepen/?amount=1')
+	.then(res => res.json())
+	.then(res => {
+		countEl.innerHTML = res.value;
+	})
+}

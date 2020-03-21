@@ -91,7 +91,7 @@ function clearcontent(elementID) {
 
 // sitevisitors
 
-// const countEl = document.getElementById('count');
+const countEl = document.getElementById('count');
 
 // updateVisitCount();
 
@@ -102,6 +102,14 @@ function clearcontent(elementID) {
 // 		countEl.innerHTML = res.value;
 // 	})
 // }
+
+function updateVisitCount() {
+	fetch('https://api.countapi.xyz/hit/nasirwatts/key')
+	.then(res => res.json())
+	.then(res => {
+		countEl.innerHTML = res.value;
+	})
+}
 
 // SOCIAL PANEL
 const floating_btn = document.querySelector('.floating-btn');

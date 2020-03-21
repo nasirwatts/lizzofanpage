@@ -87,14 +87,31 @@ result.addEventListener('click', (e) => {
 function clearcontent(elementID) {
 	document.getElementById(elementID).innerHTML = '';
 }
-const countEl = document.getElementById('count');
 
-updateVisitCount();
 
-function updateVisitCount() {
-	fetch('https://api.countapi.xyz/hit/lizzofanpage.com/visits?')
-	.then(res => res.json())
-	.then(res => {
-		countEl.innerHTML = res.value;
-	})
-}
+// sitevisitors
+
+// const countEl = document.getElementById('count');
+
+// updateVisitCount();
+
+// function updateVisitCount() {
+// 	fetch('https://api.countapi.xyz/hit/lizzofanpage.com/visits?')
+// 	.then(res => res.json())
+// 	.then(res => {
+// 		countEl.innerHTML = res.value;
+// 	})
+// }
+
+// SOCIAL PANEL
+const floating_btn = document.querySelector('.floating-btn');
+const close_btn = document.querySelector('.close-btn');
+const social_panel_container = document.querySelector('.social-panel-container');
+
+floating_btn.addEventListener('click', () => {
+	social_panel_container.classList.toggle('visible')
+});
+
+close_btn.addEventListener('click', () => {
+	social_panel_container.classList.remove('visible')
+});
